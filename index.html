@@ -4,11 +4,46 @@
 		<title>Page d'accueil
 		</title>
 		<style>
+			* {
+				box-sizing: border-box;
+			}
+			.sidenav {
+				height: 100%;
+				width: 150px;
+				position: fixed;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				background-color: #ffc9ad;
+				overflow-x: hidden;
+			}
+			.sidenav a {
+				color: black;
+				padding: 16px;
+				text-decoration: none;
+				display: block;
+			}
+			.sidenav a:hover {
+				background-color: #ffe5d7;
+				color: black;
+			}			
+			.header {
+				background-color:#ffc9ad;
+				padding: 30px;
+				text-align: center;
+				font-size: 35px;
+			}
+			.content {
+				margin-left: 150px;
+				margin-right: 20px;
+				padding-left: 20px;
+			}
 			body {
-				font-family:Helvetica;
+				margin: 0;
+				font-family: Arial, Helvetica, sans-serif;
 				color:black;
 				font-size:15px}
-			h1 {color: #4F346B;
+			h1 {color: #ff6513;
 				font-size:30px;
 				text-decoration:underline;
 				text-align:center}
@@ -18,7 +53,7 @@
 			table {
 				width:100%}
 			th {
-				background-color:#d0bdf4}
+				background-color:#ff8646}
 		</style>
 	</head>
 	<body>
