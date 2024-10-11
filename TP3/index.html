@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--1a-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--1b-->
+    <link rel="stylesheet" href="style.css">
+    <!--6-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Tp3</title>
+</head>
+
+<body>
+    <!--5-->
+    <div class="alert alert-primary">Ceci est une classe contextuelle primaire.</div>
+    <!--2 et 2a - Comme dans l'exemple présent dans le powerpoint vu en cours, j'ai utilisé la hiérarchie des containers. Un div de classe "container", ensuite un div de classe "row" et pour finir, les 3 colonnes avec des largeurs prédéfinies. La première colonne a la classe col (colonne), md (pour placer le breakpoint au niveau des affichages de type "Medium device"), et la valeur 2 (pour que la colonne utilise 2 des 12 colonnes disponibles). Les deux autres colonnes utilisent également col-md, mais elles utilisent les deux 5 des 12 colonnes disponibles.-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <blockquote class="blockquote">
+                    <p>“If, at first, you do not succeed, call it version 1.0.”</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    <a href="https://www.goodreads.com/quotes/10673472-if-at-first-you-do-not-succeed-call-it-version">Khayri
+                        R.R. Woulfe</a>
+                </figcaption>
+            </div>
+            <div class="col-md-5">
+                <!--3-->
+                <div class="card">
+                    <img src="images/DylanShaw-esokw-CsP9s-unsplash.jpg" class="card-img-top"
+                        alt="Iguane de Dylan Shaw">
+                    <div class="card-body">
+                        <h1 class="card-title">Bienvenue</h1>
+                        <p>Ceci est une card avec une image cap.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <!--4-->
+                <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-config="pause:hover">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="images/GregRosenke-GAGed6WJoOY-unsplash.jpg" class="d-block w-100"
+                                alt="Femme qui court de Greg Rosenke">
+                            <h3 class="carousel-caption d-md-block">
+                                Run
+                            </h3>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="images/PeterConlan-LEgwEaBVGMo-unsplash.jpg" class="d-block w-100"
+                                alt="Femme qui est en train de sauter de Peter Conlan">
+                            <h3 class="carousel-caption d-md-block">
+                                Jump
+                            </h3>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="images/MarkAsthoff-fvo0FOblf3s-unsplash.jpg" class="d-block w-100"
+                                alt="Personne sous l'eau de Mark Asthoff">
+                            <h3 class="carousel-caption d-md-block">
+                                Dive
+                            </h3>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--8 - La classe ms signifie "margin-start". Elle indique donc que l'élément aura une marge à gauche. Le chiffre 5, présent dans la classe, correspond à la taille de la marge. Selon la documentation de Bootstrap, la valeur 5 indique que la marge sera égale à 3 rem. La classe md indique que le "breakpoint" est les "medium device" donc cette marge ne sera appliquée que si l'écran est plus grand ou égale à 768px. Pour vérifier que la classe s'appliquait correctement, j'ai dupliqué l'élément, en supprimant uniquement la classe.-->
+    <div class="ms-md-5">Ceci est un élément qui contient la classe ms-md-5.
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pretium ex sed eros blandit pulvinar.
+            Praesent dapibus lorem convallis, euismod tellus non, mollis nisl. Proin ac lacinia lacus, et aliquam
+            turpis. Sed volutpat enim quam, in fringilla metus vulputate ut. Curabitur aliquet enim elit, at laoreet
+            arcu tempus non. Integer sodales pellentesque placerat. Donec malesuada, nunc a rutrum aliquet, turpis nequa
+            aliquet leo, vel auctor lacus nulla at quam. Fusce urna ligula, feugiat non convallis et, pulvinar tempus
+            ligula.</p>
+    </div>
+    <div>Ceci est un élément qui ne contient pas la classe ms-md-5.
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pretium ex sed eros blandit pulvinar.
+            Praesent dapibus lorem convallis, euismod tellus non, mollis nisl. Proin ac lacinia lacus, et aliquam
+            turpis. Sed volutpat enim quam, in fringilla metus vulputate ut. Curabitur aliquet enim elit, at laoreet
+            arcu tempus non. Integer sodales pellentesque placerat. Donec malesuada, nunc a rutrum aliquet, turpis nequa
+            aliquet leo, vel auctor lacus nulla at quam. Fusce urna ligula, feugiat non convallis et, pulvinar tempus
+            ligula.</p>
+    </div>
+    <!--6-->
+    <div class="d-flex justify-content-between">
+        <i class="bi bi-asterisk">Ceci est une icône Bootstrap</i>
+        <i class="bi bi-tablet">L'affichage de cette page n'est pas optimisé pour les écrans plus petits que celui d'une tablette.</i>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

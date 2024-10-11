@@ -1,0 +1,36 @@
+body {
+    margin: 3%;
+    background-image: url(images/subtle-prism.svg);
+    /*https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/*/
+}
+
+div.container {
+    padding: 2%;
+}
+
+.blockquote {
+    text-align: left;
+    background: lightskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 4.5rem;
+    padding-bottom: 1rem;
+}
+
+div.col-md-5 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.card {
+    width: auto
+}
+
+.blockquote-footer {
+    text-align: right;
+    background: lightskyblue;
+    padding-bottom: 4rem;
+}
